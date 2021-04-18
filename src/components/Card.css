@@ -1,0 +1,44 @@
+.card {
+  color: white;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
+
+.card > h2 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: large;
+}
+.card > img {
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.card > p {
+  font-weight: 400;
+  color: lightgray;
+  font-size: small;
+}
+
+.card__infoStat {
+  display: none;
+}
+
+.card:hover > .card__infoStat {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.card__infoStat > .MuiSvgIcon-root {
+  margin-right: 5px;
+  font-size: small;
+}
